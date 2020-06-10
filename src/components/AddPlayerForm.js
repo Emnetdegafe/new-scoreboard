@@ -6,7 +6,6 @@ export default function AddPlayer(props) {
 
   const ClicktOAdd = () =>{
   props.addPlayer(name)
-  set_name(name)
 }
   return (
     <div className="AddPlayerForm">

@@ -52,14 +52,14 @@ export default function Scoreboard() {
     set_players(randomPlayerScore);
   };
   const addPlayer = newPlayerName => {
-    
+    console.log('what is the name?', newPlayerName)
     const newPlayer = {
       id: players.length + 1,
       name:newPlayerName,
       score:0,
 
     };
-    set_players(...players, newPlayer)
+    set_players([...players, newPlayer])
   }
   return (
     <div className="Scoreboard">
